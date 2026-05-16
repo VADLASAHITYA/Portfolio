@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const applyTheme = (theme) => {
     root.setAttribute('data-theme', theme);
     if (themeToggle) {
-      themeToggle.setAttribute('aria-pressed', theme === 'light');
+      themeToggle.setAttribute('aria-pressed', theme === 'dark');
     }
   };
 
