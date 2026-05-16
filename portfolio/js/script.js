@@ -8,8 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const root = document.documentElement;
   const themeToggle = document.getElementById('themeToggle');
   const storedTheme = localStorage.getItem('theme');
-  const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
-  const initialTheme = storedTheme || (prefersLight ? 'light' : 'dark');
+  const initialTheme = storedTheme || 'dark';
 
   const applyTheme = (theme) => {
     root.setAttribute('data-theme', theme);
